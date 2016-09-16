@@ -100,7 +100,7 @@ abstract class BaseRepository implements RepositoryInterface
      * @param string|null $key
      * @return \Illuminate\Support\Collection|array
      */
-    public function lists($column, $key = null)
+    public function pluck($column, $key = null)
     {
         return $this->model->pluck($column, $key);
     }
